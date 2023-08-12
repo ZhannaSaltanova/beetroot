@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW 4</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form action="#" name="date" method="get" class="form">
+            <label for="fullname">Повне ім'я
+                <input type="text" class="fullname" name="fullname" required>
+            </label>
+            <label for="email">Email
+                <input type="email" class="email" name="email" required>
+            </label>
+            <label for="password">Пароль
+                <input type="password" class="password" name="password" required>
+            </label>
+            <label for="confirm_password">Пароль ще раз
+                <input type="password" class="confirm_password" name="confirm_password" required>
+            </label>
+            <label for="gender">Cтать
+                <input type="radio" class="gender" name="gender" required checked>Чоловіча
+                <input type="radio" class="gender" name="gender">Жіноча
+            </label>
+            <label for="age">Вік<input type="number" class="age" name="age" required></label>
+            <label for="course">Курс
+                <select class="course" name="course" required>
+                    <option value="Front-End">Front-End</option>
+                    <option value="Back-End">Back-End</option>
+                    <option value="Project Management">Project Management</option>
+                    <option value="QA Manual">QA Manual</option>
+                </select>
+            </label>
+            <label for="fulladdress">Повна адреса
+                <textarea class="fulladdress" name="fulladdres" required></textarea>
+            </label>
+            <label for="agree">
+                <input type="checkbox" class="agree" name="agree" required>Я погоджуюсь з обробкою персональних даних
+            </label>
+            <div class="button">
+                <button type="reset" class="reset">Очистити форму</button>
+                <button type="submit" class="submit">Зареєструватися</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
