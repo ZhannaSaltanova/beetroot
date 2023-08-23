@@ -1,0 +1,128 @@
+@font-face {
+    font-family: "Farro";
+    src: url(fonts/Farro-Regular.ttf) format(truetype);
+}
+@font-face {
+    font-family: "Francois One";
+    src: url(fonts/FrancoisOne-Regular.ttf) format(truetype);
+}
+@font-face {
+    font-family: "Staatliches";
+    src: url(fonts/Staatliches-Regular.ttf) format(truetype);
+}
+@font-face {
+    font-family: "PT Sans";
+    src: url(fonts/PTSans-Regular.ttf) format(truetype);
+    font-weight: 400;
+}
+@font-face {
+    font-family: "PT Sans";
+    src: url(fonts/PTSans-Bold.ttf) format(truetype);
+    font-weight: 600;
+}
+@font-face {
+    font-family: "Tourney";
+    src: url(fonts/Tourney-Bold.ttf) format(truetype);
+}
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 10px auto;
+}
+.header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.lang {
+    color: #000000;
+    font-family: 'Tourney', sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: 1.32px;
+}
+ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap:10px;
+    margin-left: 50px;
+    color: #000;
+    font-family: 'Staatliches', sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+}
+.navigator {
+    text-decoration: none;
+    color: #000;
+    font-family: 'Staatliches', sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.66px;
+    text-decoration: none;
+}
+.logo {
+    margin-left: 601px;
+}
+.introduction, .components, .fundamentals, .text {
+    margin-top: 70px;
+}
+.text {
+    margin-bottom: 90px;
+}
+.introduction h2, .components h2, .fundamentals h2, .text h2 {
+    color: #000;
+    font-family: 'Francois One', sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 48px;
+    letter-spacing: 1.44px;
+    text-transform: uppercase;
+}
+.introduction h2 span, .components h2 span, .fundamentals h2 span, .text h2 span {
+    color: #000;
+    vertical-align: super;
+    font-family: 'Farro', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 1.2px;
+    text-transform: capitalize;
+}
+.introduction p, .components p, .fundamentals p, .text p {
+    margin-top: 40px;
+    color: #000;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 48px;
+}
+.introduction p span, .underline {
+    text-decoration-line: underline;
+}
+.components p span, .text p span {
+    font-style: italic;
+}
+.text p {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.bold {
+    color: #000;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 28px;
+    font-style:normal;
+    font-weight: 900;
+    line-height: 48px;
+}
+.color {
+    background-color: rgb(213, 210, 210);
+}
