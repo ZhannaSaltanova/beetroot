@@ -29,13 +29,19 @@
     max-width: 1200px;
     margin: 10px auto;
 }
+.img {
+    position: fixed;
+    top:120px;
+    right: -450px;
+    
+}
 .main {
     display: flex;
     position: relative;
     justify-content: space-between;
     gap: 50px;
     width: 100%;
-    max-width: 1440px;
+    max-width: 1200px;
     margin: 0 auto;
     padding-right: 30px;
 
@@ -56,14 +62,11 @@
     margin-top: 20px;
     position: relative;
 }
-.img {
-    position: absolute;
-    left: 200px;
-}
 .bar {
     float: left;
     margin: 30px;
     margin-right: 50px;
+    position: fixed;
 }
 .site_bar ul {
     display: flex;
@@ -110,7 +113,9 @@ hr {
     right: 0;
     bottom: 0;
     margin-bottom: 20px;
-    background-color: initial;
+    background-color: white;
+    height: 80px;
+    z-index: 2;
 }
 .lang {
     color: #000000;
