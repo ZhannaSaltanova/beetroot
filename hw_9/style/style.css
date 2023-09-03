@@ -27,13 +27,12 @@
 .container {
     width: 100%;
     max-width: 1200px;
-    margin: 10px auto;
+    margin: 0 auto;
 }
 .img {
     position: fixed;
     top:120px;
-    right: -450px;
-    
+    right: 0;
 }
 .main {
     display: flex;
@@ -62,11 +61,14 @@
     margin-top: 20px;
     position: relative;
 }
+.site_bar {
+    position: relative;
+}
 .bar {
-    float: left;
     margin: 30px;
     margin-right: 50px;
-    position: fixed;
+    position: sticky;
+    top: 150px;
 }
 .site_bar ul {
     display: flex;
