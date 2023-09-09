@@ -43,6 +43,7 @@
     max-width: 1200px;
     margin: 0 auto;
     padding-right: 30px;
+    padding-top: 80px;
 
 }
 .container_right {
@@ -68,7 +69,7 @@
     margin: 30px;
     margin-right: 50px;
     position: sticky;
-    top: 150px;
+    top: 80px;
 }
 .site_bar ul {
     display: flex;
@@ -109,7 +110,7 @@ hr {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    position: sticky;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
