@@ -1,107 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HW 10</title>
-    <link rel="stylesheet" href="style/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HW 10</title>
+  <link rel="stylesheet" href="style/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 </head>
-
 <body>
-    <div class="container">
-        <div class="container_left">
-            <h2>Create an Account</h2>
-            <form action="#" name="greate">
-                <div class="wrapper">
-                    <label>First Name
-                        <input type="text" name="first_name" required>
-                    </label>
-                    <label>Last Name
-                        <input type="text" name="last_name"required>
-                    </label>
-                    <label>Email
-                        <input type="email" name="email" required>
-                        <p>We'll never share your email with anyone else.</p>
-                    </label>
-                   <div class="radio">
-                        <label>Male
-                            <input type="radio" name="gender" required><div class="check_first"></div>
-                        </label>
-                        <label>Female
-                            <input type="radio" name="gender" required><div class="check_second"></div>
-                        </label>
-                    </div>
-                    <label>Country
-                        <div class="select_wrapper">
-                            <select required>
-                                <option value="country">Country1</option>
-                                <option value="country">Country2</option>
-                                <option value="country">Country3</option>
-                                <option value="country">Country4</option>
-                            </select>
-                            <img src="img/icons/arrow.png" alt="arrow">
-                        </div>
-                    </label>
-                    <label>City
-                        <input type="text" required>
-                    </label>
-                    <button type="submit">Sign Up</button>
-                </div>
-            </form>
-            <p class="igree">By clicking the 'Sign Up' button, you confirm that you accept our <a href="#">Terms of Use</a> and <a
-                    href="#">Privacy Policy</a>.</p>
-            <hr>
-            <p class="have">Have an account?<a href="#">Log In</a></p>
-            
+<div class="container">
+  <div class="container_left">
+    <h2>Create an Account</h2>
+    <form action="#" name="greate">
+      <div class="wrapper">
+        <label>First Name
+          <input type="text" name="first_name" required>
+        </label>
+        <label>Last Name
+          <input type="text" name="last_name" required>
+        </label>
+        <label>Email
+          <input type="email" name="email" required>
+          <p>We'll never share your email with anyone else.</p>
+        </label>
+        <div class="radio">
+          <label>Male
+            <input type="radio" name="gender" required>
+            <div class="check_first"></div>
+          </label>
+          <label>Female
+            <input type="radio" name="gender" required>
+            <div class="check_second"></div>
+          </label>
         </div>
-        <div class="container_right">
-            <h2>Profile</h2>
-            <div class="upload">
-                <img src="img/photo.png" alt="photo" class="photo">
-                <div class="input_wrapper">
-                    <input type="text" class="input">
-                    <img src="img/icons/camera.svg" alt="camera" class="camera">
-                </div>
-                <button type="reset"><img src="img/icons/Trash.svg" alt="trash"></button>
-                <p>Up to 1 MB (300x300 px)</p>
-            </div>
-            <form action="#" name="profile">
-                <div class="wrapper_profile">
-                    <label>Name
-                        <input type="text" name="name" required>
-                    </label>
-                    <label>E-mail
-                        <input type="email" name="email"required>
-                    </label>
-                    <label>Country
-                        <div class="select_wrapper">
-                            <select required>
-                                <option value="country">Country1</option>
-                                <option value="country">Country2</option>
-                                <option value="country">Country3</option>
-                                <option value="country">Country4</option>
-                            </select>
-                            <img src="img/icons/arrow.png" alt="arrow">
-                        </div>
-                    </label>
-                    <label>City
-                        <input type="text" required>
-                    </label>
-                    <label>Zip Code
-                        <input type="text" name="first_name" required>
-                    </label>
-                    <label>Phone Number
-                        <input type="text" name="last_name"required>
-                    </label>
-                    <button type="submit">Update</button>
-                </div>
-            </form>
-           
-        </div>
+        <label>Country
+          <div class="select_wrapper">
+            <select name="select" required>
+              <option value="country">Country1</option>
+              <option value="country">Country2</option>
+              <option value="country">Country3</option>
+              <option value="country">Country4</option>
+            </select>
+            <img src="img/icons/arrow.png" alt="arrow">
+          </div>
+        </label>
+        <label>City
+          <input name="city" type="text" required>
+        </label>
+        <button type="submit">Sign Up</button>
+      </div>
+    </form>
+    <p class="igree">By clicking the 'Sign Up' button, you confirm that you accept our <a href="#">Terms of Use</a> and
+      <a href="#">Privacy Policy</a>.</p><hr>
+    <p class="have">Have an account?<a href="#">Log In</a></p>
+  </div>
+  <div class="container_right">
+    <h2>Profile</h2>
+    <div class="upload">
+      <img src="img/photo.png" alt="photo" class="photo">
+      <div class="input_wrapper">
+        <input type="text" class="input">
+        <img src="img/icons/camera.svg" alt="camera" class="camera">
+      </div>
+      <button type="reset"><img src="img/icons/Trash.svg" alt="trash"></button>
+      <p>Up to 1 MB (300x300 px)</p>
+    </div>
+    <form action="#" name="profile">
+      <div class="wrapper_profile">
+        <label>Name
+          <input type="text" name="name" required>
+        </label>
+        <label>E-mail
+          <input type="email" name="email" required>
+        </label>
+        <label>Country
+          <div class="select_wrapper">
+            <select required>
+              <option value="country">Country1</option>
+              <option value="country">Country2</option>
+              <option value="country">Country3</option>
+              <option value="country">Country4</option>
+            </select>
+            <img src="img/icons/arrow.png" alt="arrow">
+          </div>
+        </label>
+        <label>City
+          <input type="text" required>
+        </label>
+        <label>Zip Code
+          <input type="text" name="first_name" required>
+        </label>
+        <label>Phone Number
+          <input type="text" name="last_name" required>
+        </label>
+        <button type="submit">Update</button>
+      </div>
+    </form>
+  </div>
 </body>
-
 </html>
