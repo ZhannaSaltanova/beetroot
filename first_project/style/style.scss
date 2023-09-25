@@ -17,10 +17,18 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    .menu-btn {
+        width: 30px;
+        height: 30px;
+        position: relative;
+        z-index:2;
+	    overflow: hidden;
+        // display: none;
+    }
     @media  (max-width: 768px) {
         padding: 10px 10px;
     }
-    @media  (max-width: 320px) {
+    @media  (max-width: 460px) {
         padding: 20px 10px;
     }
     ul {
@@ -313,16 +321,16 @@ header {
             padding: 42px 70px;
             margin-left: 150px;
             &:nth-child(1) {
-                background-image: url(../img/bg/search\ data.png);
+                background-image: url(../img/bg/search_data.png);
             }
             &:nth-child(2) {
-                background-image: url(../img/bg/24\ hours.png);
+                background-image: url(../img/bg/24_hours.png);
             }
             &:nth-child(3) {
-                background-image: url(../img/bg/Print\ Out.png);
+                background-image: url(../img/bg/print_out.png);
             }
             &:nth-child(4) {
-                background-image: url(../img/bg/search\ data.png);
+                background-image: url(../img/bg/security_code.png);
             }
             @media  (max-width: 999px){
                 margin-left: 90px;
@@ -402,7 +410,7 @@ header {
     display: flex;
     flex-direction: column;
     margin-top: 120px;
-    background-image: url(../img/bg/Testimonials.png);
+    background-image: url(../img/bg/testimonials.png);
     border-radius:50px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -426,6 +434,9 @@ header {
         font-weight: 700;
         line-height: 130%;
         margin-top: 80px;
+        @media  (max-width: 768px) {
+            margin-top: 30px;
+        }
         @media  (max-width: 450px) {
             font-size: 28px;
             margin-top: 40px;
@@ -436,13 +447,18 @@ header {
         margin-top: 80px;
         gap:100px;
         justify-content: center;
+        align-items: center;
         @media  (max-width: 800px) {
             margin-top: 40px;
             gap:40px;
+            flex-direction: column;
+            padding-bottom: 40px;
         }
         @media  (max-width: 320px) {
             margin-top: 80px;
             gap:20px;
+            flex-direction: column;
+            padding-bottom: 40px;
         }
         .men, .women {
             display: flex;
@@ -457,14 +473,16 @@ header {
             background: #FFF;
             box-shadow: 0px 5px 5px 0px rgba(75, 93, 104, 0.10);
             margin-bottom: 80px;
-            @media  (max-width: 657px) {
-                flex-wrap: wrap;
+            @media  (max-width: 768px) {
                 padding: 40px 10px;
                 justify-content: center;
+                margin-bottom: 10px;
             }
-            @media  (max-width: 320px) {
+            @media  (max-width: 300px) {
                width: 40%;
                justify-content: center;
+               padding: 10px 10px;
+               margin-bottom: 0;
             }
             img {
                 border-radius: 50%;
@@ -479,10 +497,8 @@ header {
                     line-height: 160%;
                     @media  (max-width: 450px) {
                         font-size: 12px;
-                        text-align: center;
                     }
                     @media  (max-width: 657px) {
-                        text-align: center;
                     }
                 }
                 .email {
@@ -495,11 +511,10 @@ header {
                     letter-spacing: 0.14px;
                     margin-bottom: 19px;
                     @media  (max-width: 657px) {
-                        text-align: center;
                     }
                     @media  (max-width: 450px) {
                         font-size: 10px;
-                        text-align: center;
+                        margin-bottom: 10px;
                     }
                 }
                 .desc {
@@ -511,7 +526,6 @@ header {
                     line-height: 160%; 
                     @media  (max-width: 450px) {
                         font-size: 14px;
-                        text-align: center;
                     }
                 }
             }
@@ -674,9 +688,10 @@ header {
         margin-top: 100px;
         justify-content: space-between;
         @media (max-width: 768px) {
-           flex-wrap: wrap;
+           flex-direction: column;
            gap:40px;
            justify-content: center;
+           align-items:center;
            margin-top: 40px;
         }
         .add {
@@ -715,55 +730,62 @@ header {
                 letter-spacing: 0.16px;
             }
         }
-        #about {
-            h6 {
-                color: var(--text-violet-dark, #212353);
-                font-family: Montserrat;
-                font-size: 16px;
-                font-style: normal;
-                font-weight: 600;
-                line-height: 160%; 
-                margin-bottom: 30px;
-            }
-            ul {
-                li {
-                    margin-bottom: 10px;
-                    a {
-                        text-decoration: none;
-                        color:  #4B5D68;
-                        font-family: Montserrat;
-                        font-size: 16px;
-                        font-style: normal;
-                        font-weight: 500;
-                        line-height: 160%; 
+        .navigat {
+            display: flex;
+            gap:150px;
+            @media (max-width: 900px) {
+                gap:80px;
+             }
+            #about {
+                h6 {
+                    color:#212353;
+                    font-family: Montserrat;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 160%; 
+                    margin-bottom: 30px;
+                }
+                ul {
+                    li {
+                        margin-bottom: 10px;
+                        a {
+                            text-decoration: none;
+                            color:  #4B5D68;
+                            font-family: Montserrat;
+                            font-size: 16px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: 160%; 
+                        }
                     }
                 }
             }
-        }
-        #help {
-            h6 {
-                color: var(--text-violet-dark, #212353);
-                font-family: Montserrat;
-                font-size: 16px;
-                font-style: normal;
-                font-weight: 600;
-                line-height: 160%; 
-                margin-bottom: 30px;
-            }
-            ul {
-                li {
-                    margin-bottom: 10px;
-                    a {
-                        text-decoration: none;
-                        color:  #4B5D68;
-                        font-family: Montserrat;
-                        font-size: 16px;
-                        font-style: normal;
-                        font-weight: 500;
-                        line-height: 160%; 
+            #help {
+                h6 {
+                    color: var(--text-violet-dark, #212353);
+                    font-family: Montserrat;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 160%; 
+                    margin-bottom: 30px;
+                }
+                ul {
+                    li {
+                        margin-bottom: 10px;
+                        a {
+                            text-decoration: none;
+                            color:  #4B5D68;
+                            font-family: Montserrat;
+                            font-size: 16px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: 160%; 
+                        }
                     }
                 }
-            }
+            } 
         }
         .social {
             h6 {
