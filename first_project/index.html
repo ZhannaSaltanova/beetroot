@@ -12,12 +12,12 @@
 <body>
     <header class="container">
         <a href="#"> <img src="img/Logo.svg" alt="logo"></a>
-        <div class="menu_btn">
+        <div class="burger">
             <span></span>
             <span></span>
             <span></span>
         </div>
-       <ul class="navbar">
+       <ul class="desk">
             <li><a href="#about">About</a></li>
             <li><a href="#help">Help</a></li>
             <li><a href="#features">Features</a></li>
@@ -30,6 +30,12 @@
             </svg>
         </button>
     </header>
+    <ul class="mob">
+        <li><a href="#about">About</a></li>
+        <li><a href="#help">Help</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#">Sign Up</a></li>
+    </ul>
     <section class="container save">
             <h1>Save your data <br>storage here.</h1>
             <p>Data Warehouse is a data storage area that has been
@@ -197,5 +203,12 @@
         </div>
         <p class="corp">© Datawarehouse™, 2020. All rights reserved.<br>Company Registration Number: 21479524.</p>
     </footer>
+    <script>
+        let burger = document.querySelector('.burger');;
+        let mob = document.querySelector('.mob');
+        burger.addEventListener('click', function(){
+            mob.classList.toggle('active');
+        })
+    </script>
 </body>
 </html>

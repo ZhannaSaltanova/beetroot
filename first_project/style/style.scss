@@ -5,11 +5,13 @@
     max-width: 1170px;
     height: auto;
     margin: 0 auto;
+    padding: 17px 10px 0 10px;
     @media  (max-width: 1170px) {
-        padding: 37px 10px;
+        padding: 37px 10px 0 10px;
     }
     @media  (max-width: 768px) {
         max-width: 768px;
+        padding: 20px 10px;
     }
 }
 header {
@@ -17,13 +19,23 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    .menu-btn {
-        width: 30px;
+    position: relative;
+    .burger {
         height: 30px;
-        position: relative;
-        z-index:2;
-	    overflow: hidden;
-        // display: none;
+        flex-direction: column;
+        gap: 5px;
+        position: absolute;
+        top: 25px;
+        left: 80px;
+        display: none;
+        @media  (max-width: 460px) {
+            display: flex;
+        }
+        span {
+            width: 30px;
+            height: 5px;
+            background-color:#C13584;
+        }
     }
     @media  (max-width: 768px) {
         padding: 10px 10px;
@@ -31,19 +43,20 @@ header {
     @media  (max-width: 460px) {
         padding: 20px 10px;
     }
-    ul {
+    .desk {
         display: flex;
         justify-content: space-around;
         gap: 40px;
         margin-right: 150px;
+        @media  (max-width: 1170px) {
+           gap:20px;
+        }
         @media  (max-width: 768px) {
             margin: 10px;
             gap:10px;
         }
-        @media  (max-width: 420px) {
-            margin: 10px;
-            flex-wrap: wrap;
-            gap:10px;
+        @media  (max-width: 460px) {
+            display: none;
         }
         li {
             a {
@@ -127,16 +140,17 @@ header {
     background-position: bottom right;
     @media  (max-width: 1170px) {
         background-size: 70%;
+        margin-top: 10px;
     }
     @media  (max-width: 768px) {
        background-size: 60%;
-       margin-top: 50px;
+       margin-top: 10px;
        height: auto;
        padding: 10px;
     }
     @media  (max-width: 520px) {
        background-image:none;
-       margin-top: 20px;
+       margin-top: 0px;
        height: auto;
        padding: 5px;
     }
@@ -154,8 +168,9 @@ header {
         @media  (max-width: 768px) {
             font-size: 55px;
         }
-        @media  (max-width: 420px) {
-            font-size: 30px;
+        @media  (max-width: 460px) {
+            font-size: 40px;
+            margin-top: 10px;
         }
     }
     p {
@@ -217,7 +232,7 @@ header {
         justify-content: center;
     }
     @media  (max-width: 420px) {
-        margin-top: 50px;
+        margin-top: 10px;
         gap:50px;
         padding: 35px 30px;
         flex-wrap: wrap;
@@ -280,8 +295,9 @@ header {
         font-weight: 700;
         line-height: 130%;
         margin-bottom: 50px;
-        @media  (max-width: 320px) {
+        @media  (max-width: 420px) {
             font-size: 28px;
+            margin-bottom: 10px;
         }
     }
     .desc {
@@ -293,6 +309,9 @@ header {
         font-weight: 500;
         line-height: 160%; 
         margin-bottom: 80px;
+        @media  (max-width: 420px) {
+            margin-bottom: 20px;
+        }
     }
     .feature {
         display: flex;
@@ -858,6 +877,30 @@ header {
         }
     }
 }
+.mob {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    display: none;
+    li {
+        a {
+            text-decoration: none;
+            color: #4B5D68;
+            font-family: Montserrat;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 160%;
+            &:hover {
+                color: #8A40EE;
+            }
+            @media  (min-width: 460px) {
+                display: none;
+            }
+        }
+    }
 
-    
-    
+}
+.active {
+    display: flex;
+}
