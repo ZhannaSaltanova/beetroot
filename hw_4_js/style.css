@@ -1,0 +1,14 @@
+.all-articles {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap:15px;
+}
+h3 {
+    color: rgb(52, 73, 73);
+}
+img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    height: auto;
+}
