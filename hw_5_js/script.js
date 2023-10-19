@@ -14,9 +14,7 @@ let shopping = [
         amount: 5,
         buy: true,
         price: 30,
-        total: function (){
-            
-        }
+        total: 5 * 30,
     },
     {
         name: 'sugar',
@@ -56,3 +54,43 @@ function myList (){
 }
 myList();
 console.log(newShopping);
+
+function buying (name) {
+    for(let i = 0; i < shopping.length; i++){
+        if(shopping[i].name === name){
+           shopping[i].buy = true; 
+        } 
+    }
+}
+
+buying('sugar');
+
+let newShopping2 = shopping.slice();
+
+function deletion (name) {
+    for(let i = 0; i < newShopping2.length; i++){
+        if(newShopping2[i].name === name){
+           delete newShopping2 [i];
+        } 
+    }
+}
+
+deletion('milk');
+console.log(newShopping2);
+
+// function add (name, amount, buy, price, total){
+//     for(let i = 0; i < shopping.length; i++){
+//         if(name === shopping[i].name){
+//             amount = shopping[i].amount + amount;
+//         }
+//     }
+//         let prod = new Object;
+//         prod.name = name;
+//         prod.amount = amount;
+//         prod.buy = buy;
+//         prod.price = price;
+//         prod.total = total;
+//         shopping.push(prod);
+//      }
+    
+//     add('milk', 10, false, 40, 400);
