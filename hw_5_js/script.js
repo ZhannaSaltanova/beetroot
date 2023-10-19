@@ -8,6 +8,7 @@
 // 3 Додавання покупки в список. Враховуй, що при додаванні покупки з уже існуючим в списку продуктом, необхідно збільшувати кількість в існуючій покупці, а не додавати нову. При цьому також повинна змінитися сума, наприклад, якщо ціна за одиницю 12, а кількості товарів стало 2, то сума буде 24.
 
 
+
 let shopping = [
     {
         name: 'milk',
@@ -15,7 +16,7 @@ let shopping = [
         buy: true,
         price: 30,
         total(){
-            console.log(this.amount * this.price)
+           return this.amount * this.price;
         }
     },
     {
@@ -23,25 +24,32 @@ let shopping = [
         amount: 3,
         buy: false,
         price: 20,
-        total: 3 * 20,
+        total(){
+            return this.amount * this.price;
+         }
     },
     {
         name: 'potato',
         amount: 6,
         buy: true,
         price: 30,
-        total: 6 * 30,
+        total(){
+            return this.amount * this.price;
+         }
     },
     {
         name: 'coffee',
         amount: 7,
         buy: false,
         price: 150,
-        total: 7 * 150,
+        total(){
+            return this.amount * this.price;
+         }
     },
 ]
 
 console.log(shopping);
+console.log(shopping[0].total());
 
 let newShopping = [];
 
@@ -80,19 +88,30 @@ function deletion (name) {
 deletion('milk');
 console.log(newShopping2);
 
-// function add (name, amount, buy, price, total){
-//     for(let i = 0; i < shopping.length; i++){
-//         if(name === shopping[i].name){
-//             amount = shopping[i].amount + amount;
-//         }
-//     }
-//         let prod = new Object;
-//         prod.name = name;
-//         prod.amount = amount;
-//         prod.buy = buy;
-//         prod.price = price;
-//         prod.total = total;
-//         shopping.push(prod);
-//      }
+
+function add (name, amount, buy, price, total){
+    let existing;
+    for (let i = 0; i < shopping.length; i++) {
+        if (shopping[i].name === name) {
+            existing = shopping[i];
+            break;
+        }
+    }
+    if (existing) {
+        existing.amount += amount;
+    } else {
+        let prod = {};
+        prod.name = name;
+        prod.amount = amount;
+        prod.buy = buy;
+        prod.price = price;
+        prod.total = total;
+        shopping.push(prod);
+    }
+}
+
     
-//     add('milk', 10, false, 40, 400);
+
+    
+    add('tea', 10, false, 40, 400);
+    add('milk', 5, false, 30, 150);
