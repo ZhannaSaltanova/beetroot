@@ -14,7 +14,9 @@ let shopping = [
         amount: 5,
         buy: true,
         price: 30,
-        total: 5 * 30,
+        total(){
+            console.log(this.amount * this.price)
+        }
     },
     {
         name: 'sugar',
