@@ -51,6 +51,7 @@ let shopping = [
 console.log(shopping);
 console.log(shopping[0].total());
 
+
 let newShopping = [];
 
 function myList (){
