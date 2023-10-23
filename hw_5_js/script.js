@@ -46,7 +46,7 @@ let shopping = [
             return this.amount * this.price;
          }
     },
-]
+];
 
 console.log(shopping);
 console.log(shopping[0].total());
@@ -65,6 +65,11 @@ function myList (){
 }
 myList();
 console.log(newShopping);
+
+
+
+
+
 
 function buying (name) {
     for(let i = 0; i < shopping.length; i++){
@@ -111,8 +116,5 @@ function add (name, amount, buy, price, total){
     }
 }
 
-    
-
-    
-    add('tea', 10, false, 40, 400);
-    add('milk', 5, false, 30, 150);
+add('tea', 10, false, 40, 400);
+add('milk', 5, false, 30, 150);
