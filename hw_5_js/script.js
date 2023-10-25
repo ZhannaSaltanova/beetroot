@@ -95,7 +95,7 @@ deletion('milk');
 console.log(newShopping2);
 
 
-function add (name, amount, buy, price, total){
+function add (name, amount, buy, price){
     let existing;
     for (let i = 0; i < shopping.length; i++) {
         if (shopping[i].name === name) {
@@ -106,15 +106,16 @@ function add (name, amount, buy, price, total){
     if (existing) {
         existing.amount += amount;
     } else {
-        let prod = {};
-        prod.name = name;
-        prod.amount = amount;
-        prod.buy = buy;
-        prod.price = price;
-        prod.total = total;
+        let prod = {
+            name: name,
+            amount: amount,
+            buy: buy,
+            price: price,
+            total: `${amount}` * `${price}`,
+        };
         shopping.push(prod);
     }
 }
 
-add('tea', 10, false, 40, 400);
-add('milk', 5, false, 30, 150);
+add('tea', 10, false, 40);
+add('milk', 5, false, 30);
