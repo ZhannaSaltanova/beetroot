@@ -77,6 +77,8 @@ console.log(ID);
 // Перевірка водія на наявність його ім’я у списку
 // Підрахунок необхідного часу та кількості палива для подолання переданої відстані з середньою швидкістю. Враховуй, що через кожні 4 години дороги водієві необхідно робити перерву на 1 годину. 
 
+let distance = prompt('Введіть відстань (км):');
+const tripDetails = car.calculateSpeed(distance);
 
 const car = {
   mark: "Toyota",
@@ -101,7 +103,15 @@ const car = {
       } else {
         console.log('водій у списку відсутній')
       }
-    }
+    },
+    calculateSpeed () {
+      let travelTime = distance / this.averageSpeed;
+      let numberOfBreaks = Math.floor(travelTime/ 4);
+      let totalBreakTime = numberOfBreaks * 1;
+      let totalTravelTime = travelTime + totalBreakTime;
+      let fuelNeeded = (distance / 100) * this.fuelConsumption;
+      return [totalTravelTime, fuelNeeded];
+    },
   }
 
 
@@ -109,6 +119,8 @@ car.displayInfo();
 car.driverAdd();
 car.displayInfo();
 car.driverCheck();
+console.log(tripDetails);
+console.log()
 
 
 
