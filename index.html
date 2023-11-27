@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HW list</title>
+    <title>Home Work list</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap" rel="stylesheet">
@@ -13,6 +13,7 @@
             max-width: 1200px;
             margin: 0 auto;
             display: flex;
+            flex-wrap: wrap;
             justify-content: center;
             align-items: center;
             gap:50px;
@@ -23,11 +24,12 @@
             justify-content: center;
             flex-wrap: wrap;
         }
-        h1{
+        h3{
             color: rgb(196, 0, 78);
             font-family: "Josefin Sans";
+            font-size: 28px;
         }
-        .html, .js_base {
+        .html, .js_base, .project {
             width: 100%;
             max-width: 500px;
             margin: 50px;
@@ -41,6 +43,13 @@
             color: rgb(196, 0, 78);
             font-family: "Josefin Sans";
             font-size: 50px;
+            text-align: center;
+        }
+        h1 {
+            color: rgb(196, 0, 78);
+            font-family: "Josefin Sans";
+            font-size: 70px;
+            text-align: center;
         }
         a {
             color: rgb(91, 5, 40);
@@ -55,7 +64,7 @@
 <body>
     <header>
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpFkYNLSXUtaEEGbofTPNI6zBtm263cEDDnQ&usqp=CAU" alt="logo" width="200px">
-        <h1>my homework</h1>
+        <h3>my homework</h3>
     </header>
     <div class="main">
         <div class="html">
@@ -74,7 +83,6 @@
             <a href="hw_12/index.html">HW 12</a>
             <a href="hw_13/index.html">HW 13</a>
             <a href="hw_14/index.html">HW 14</a>
-            <a href="first_project/index.html">Project</a>
         </div>
         <div class="js_base">
             <h2>homework with JavaScript base</h2>
@@ -86,8 +94,13 @@
             <a href="hw_6_js/index.html">HW 6</a>
             <a href="hw_7_js/index.html">HW 7</a>
             <a href="hw_8_js/index.html">HW 8</a>
-            <a href="hw_9_js/index.html">HW 9</a>
-            <a href="hw_10_js/index.html">HW 10</a>
+        </div>
+        <div>
+            <h1>My project</h1>
+            <div class="project">
+                <a href="first_project/index.html">Project HTML/CSS/SCSS</a>
+            <a href="second_project/index.html">Project JavaScript</a>
+            </div>
         </div>
     </div>
     
