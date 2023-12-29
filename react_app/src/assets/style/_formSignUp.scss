@@ -1,0 +1,17 @@
+form {
+  .form-item {
+    label {
+      display: flex;
+      flex-direction: column;
+      gap:10px;
+      font: 700 23px/1 RobotoCondensed Bold,Trebuchet MS,Helvetica,Arial,sans-serif;
+      input {
+        .error {
+          &:active {
+            border:6px solid chartreuse;
+          }
+        }
+      }
+    }
+  }
+}
